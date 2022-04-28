@@ -1,10 +1,10 @@
 class PokemonInfoResponse {
   final int id;
-  final String name;
-  final String imageurl;
+  final String? name;
+  final String? imageurl;
   final List<String> types;
   final int height;
-  final String weight;
+  final int weight;
 
   PokemonInfoResponse(
       {required this.id,

@@ -33,8 +33,7 @@ class PokemonRepository {
     try {
       final response = await client.get(uri);
       final json = jsonDecode(response.body);
-      print("Inforespo");
-      log(response.body);
+
       return PokemonInfoResponse.fromJson(json);
     } catch (e) {
       print(e);
@@ -49,8 +48,7 @@ class PokemonRepository {
     try {
       final response = await client.get(uri);
       final json = jsonDecode(response.body);
-      print("SpeciesInforespo");
-      log(response.body);
+
       return PokemonSpeciesInfoResponse.fromJson(json);
     } catch (e) {
       print(e);

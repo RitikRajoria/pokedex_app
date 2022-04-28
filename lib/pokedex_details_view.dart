@@ -15,7 +15,7 @@ class PokemonDetailsView extends StatelessWidget {
       ),
       body: BlocBuilder<PokemonDetailsCubit, PokemonDetails?>(
         builder: (context, details) {
-          print(details != null);
+          print(details);
           return details != null
               ? Center(
                   child: Text(details.name),
